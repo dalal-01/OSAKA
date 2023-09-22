@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+:root{
+    --maincolor:#ff206e;
+}
+body{
+    height: 5000px;
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    background-color:transparent !important;
+}
+.navbar-nav .nav-link{
+    color: #fff;
+    font-size: 14px;
+}
+.navbar-nav a.active {
+    color:var(--maincolor)!important;
+}
+header{
+    background-image: url(../img/bg.jpg);
+    background-size:cover;
+    background-position: center;
+    
+}
+.header-title{
+    font-size: 48px;
+    font-weight:900;
+    color: #fff;
+    
+}
+.header .para{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+.header .class-info .view{
+    color: var(--maincolor);
+    text-decoration: none;
+    
+}
+.header-icons i{
+
+    text-align: center;
+}
+.header-icons{
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0rem;
+}
+
+.header-icons a{
+    color: #fff;
+    
+}
+.item{
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid rgb(34,34,34);
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.about{
+    padding-bottom: 30px;
+}
+.about-title h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: rgba(228, 225, 225, 0.548);
+}
+.about-title h3{
+    font-size: 40px;
+    color: black;
+    font-weight: 800;
+}
+.about-contant h4{
+    font-weight: 600;
+    font-size: 24px;
+}
+.about-contant h5{
+color: var(--maincolor);
+font-weight: 600;
+font-size: 16px;
+}
+.about-contant :last-child{
+    margin-top: 5rem;
+}
+.about-contant a{
+    color: black;
+    font-weight: 600;
+}
+
+.services{
+background-image: url(../img/dark_dot.jpg);
+
+}
+.services p{
+    margin-top: 80px;
+}
+.services h2{
+    padding-top: 50px;
+}
+.services h3{
+    color: #fff;
+    padding-top: 50px;
+}
+.services i{
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: -12px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--maincolor);
+    border: none;
+}
+.nav-tabs .nav-link{
+    color: black;
+    font-weight: 600;
+}
+.nav-tabs{
+    border: none;
+}
+.TESTIMONIALS img{
+    width: 60px;
+}
+.TESTIMONIALS p{
+    padding-top: 60px;
+}
+.carousel-indicators [data-bs-target] {
+    border-color: #ff206e;
+    margin-bottom: -25px;}

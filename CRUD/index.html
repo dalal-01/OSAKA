@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+  </head>
+  <body>
+   <h1>dalal</h1>
+    <div class="container w-50">
+      <h1 class="text-center  ">Products</h1>
+      <div class="format border border-secondary p-3 mb-2">
+      <p class="text-bg-secondary p-2">Add New Prouduct</p>
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input id="nameproduct" type="text" class="form-control" id="exampleFormControlInput1" >
+        <div id="namealert" class="alert alert-danger d-none">
+           please start with capital latter , The word must be from 2 to 8 letters
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input id="priceproduct"type="number" class="form-control" id="exampleInputPassword1">
+        <div id="pricealert" class="alert alert-danger d-none">
+          Please enter a number greater than 9 and less than 10000
+       </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea id="descproduct" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </div>
+        <div class="d-flex justify-content-around">
+          <button class="btn btn-outline-primary" type="submit" id="click" disabled>Submit</button>
+          <button class="btn btn-outline-info"  type="clear">Clear</button>
+          <button class="btn btn btn-danger" id="delete_all">Delete All</button>
+        </div>
+        <input type="search" onkeyup="search(this.value)" class="form-control mt-2" placeholder="search....">
+       
+    </div>
+ <div class="container paddingx pt-3">
+    <table class="table table-dark table-striped ">
+      <thead>
+        <tr>
+          <th scope="col">Product ID</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Product Price</th>
+          <th scope="col">Product Desc</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody  id="data">
+       
+      </tbody>
+    </table>
+  </div>
+    <!-- bootstrap 5 -->
+   
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+
+
+    <script src="js/newc.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+     
+    
+
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Q1- Write a program that allow to user enter number then print it . 
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+          <div class="accordion-body">
+            <p>
+              var num=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+              window.document.getElementById("q1").innerHTML=num;
+            </p>
+            <button onclick="q1()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q1">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Q2- Write a program that take number from user then print yes if that number can divide by 3 and 4 otherwise print no.
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" >
+          <div class="accordion-body">
+              <p>
+                var number=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+                if(number%3==0 && number%4==0)
+                <hr class="border-0">
+                 window.document.getElementById("q2").innerHTML="Yes";
+                 <hr class="border-0">
+                 else
+                 <hr class="border-0">
+                 window.document.getElementById("q2").innerHTML="No";
+              </p>
+              <button onclick="q2()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q2">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Q3- Write a program that allows the user to insert 2 integers then print the max.
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <p>
+                var int1=Number(window.prompt("enter the first number"));
+                <hr class="border-0">
+                var int2=Number(window.prompt("enter the second number"));
+                <hr class="border-0">
+                if(int1>=int2)
+                <hr class="border-0">
+                window.document.getElementById("q3").innerHTML=int1;
+                <hr class="border-0">
+                else 
+                window.document.getElementById("q3").innerHTML=int2;
+              </p>
+              <button onclick="q3()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q3">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingfour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+              Q4- Write a program that allows the user to insert an integer then print negative if it is negative number otherwise print positive.
+            </button>
+          </h2>
+          <div id="collapsefour" class="accordion-collapse collapse " aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>
+              var number=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+              if(number > 0)
+              <hr class="border-0">
+              window.document.getElementById("q4").innerHTML="positive";
+              <hr class="border-0">
+              else
+              window.document.getElementById("q4").innerHTML="negative";
+             </p>
+             <button onclick="q4()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q4">answer </h2>
+          </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingfive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+              Q5- Write a program that take 3 integers from user then print the max element and the min element.
+            </button>
+          </h2>
+          <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>
+              var int1=Number(window.prompt("enter the first number"));
+              <hr class="border-0">
+              var int2=Number(window.prompt("enter the second number"));
+              <hr class="border-0">
+              var int3=Number(window.prompt("enter the third number"));
+              <hr class="border-0">
+              var max;
+              var min;
+              <hr class="border-0">
+              if(int1>int2 && int1>int3)
+              <hr class="border-0">
+              window.document.getElementById("q5").innerHTML="Max element="+ int1;
+              <hr class="border-0">
+              else if(int2>int1 && int2>int3)
+              <hr class="border-0">
+              window.document.getElementById("q5").innerHTML="Max element="+ int2;
+              <hr class="border-0">
+              else
+              window.document.getElementById("q5").innerHTML="Max element="+ int3;
+             </p>
+             <button onclick="q5()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q5">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Q6- Write a program that allows the user to insert integer number then check If a number is oven or odd.
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>
+              var number=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+             if(number%2==0)
+             <hr class="border-0">
+            window.document.getElementById("q6").innerHTML="even";
+            <hr class="border-0">
+            else
+            window.document.getElementById("q6").innerHTML="odd";
+            </p>
+            <button onclick="q6()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q6">answer </h2>
+          </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Q7- Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant.
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                var char=window.prompt("enter the alphabet");
+                <hr class="border-0">
+               if(char=='a'||char=='u'||char=='o'||char=='i'||char=='e')
+               <hr class="border-0">
+               window.document.getElementById("q7").innerHTML="vowel";
+               <hr class="border-0">
+               else
+               window.document.getElementById("q7").innerHTML="Consonant";
+              </p>
+              <button onclick="q7()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q7">answer </h2>
+          </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Q8- Write a program that allows user to insert integer then print all numbers between 1 to that’s number.
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                var number=Number(window.prompt("enter the number"));
+                 <hr class="border-0">
+                var data="";
+                 <hr class="border-0">
+                for(var i=1;i&lt;=number;i++){
+                   <hr class="border-0">
+                data+=i+', '; }
+                 <hr class="border-0">
+                
+                window.document.getElementById("q8").innerHTML=data;
+              </p>
+              <button onclick="q8()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q8">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              Q9- Write a program that allows user to insert integer then print a multiplication table up to 12.
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTNine" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+              var number=Number(window.prompt("enter the number"));
+               <hr class="border-0">
+              var data="";
+               <hr class="border-0">
+              for(var i=1;i&lt;=12;i++){
+               <hr class="border-0">  
+              data+=i*number+' ';
+               
+              }
+               <hr class="border-0">
+              window.document.getElementById("q9").innerHTML=data;
+            </p>
+              <button onclick="q9()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q9">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              Q10- Write a program that allows to user to insert number then print all even numbers between 1 to this number.
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse " aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>
+              var number=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+              var data="";
+              <hr class="border-0">
+              for(var i=1;i&lt;=number;i++){
+                <hr class="border-0">
+              if(i%2==0)
+              <hr class="border-0">
+              data+=i+' ';
+             }
+             <hr class="border-0">
+             window.document.getElementById("q10").innerHTML=data;
+             </p>
+             <button onclick="q10()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q10">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              Q11- Write a program that take two integers then print the power.
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                var number1=Number(window.prompt("enter the number"));
+                    <hr class="border-0">
+                var number2=Number(window.prompt("enter the number"));
+                    <hr class="border-0">
+                var data=number1;
+                    <hr class="border-0">
+                for(var i=1;i&lt;number2;i++){
+                      <hr class="border-0">
+                data*=number1;
+                   
+                }
+                <hr class="border-0">
+                window.document.getElementById("q11").innerHTML=data;
+
+              </p>
+              <button onclick="q11()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q11">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              Q12- Write a program to enter marks of five subjects and calculate total, average and percentage.
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>
+              var number1=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+              var number2=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+              var number3=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+              var number4=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+              var number5=Number(window.prompt("enter the number"));
+                <hr class="border-0">
+              var total=number1+number2+number3+number4+number5;
+                <hr class="border-0">
+              var avg=total/5;
+                <hr class="border-0">
+              window.document.getElementById("q12").innerHTML= "total marks="+total+" /    avg="+ avg + "  /           percentage" + avg+"%";
+             </p>
+             <button onclick="q12()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q12">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThirteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            Q13- Write a program to input month number and print number of days in that month.
+          </button>
+        </h2>
+        <div id="collapseThirteen" class="accordion-collapse collapse " aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             <p>
+              var number=Number(window.prompt("enter the month number"));
+              <hr class="border-0">
+             if(number==1 ||number==3 ||number==5 ||number==7 ||number==8||number==10 ||number==12 )
+             <hr class="border-0">
+             window.document.getElementById("q13").innerHTML="Days in Month: 31";
+             <hr class="border-0">
+             else if(number==2 )
+             <hr class="border-0">
+             window.document.getElementById("q13").innerHTML="Days in Month: 28 or 29";
+             <hr class="border-0">
+             else if(number==4 ||number==6 ||number==9 ||number==11  )
+             <hr class="border-0">
+             window.document.getElementById("q13").innerHTML="Days in Month: 30";
+             <hr class="border-0">
+             </p>
+             <button onclick="q13()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q13">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFourteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+            Q14- Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer, Find percentage and grade.
+          </button>
+        </h2>
+        <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample" >
+          <div class="accordion-body">
+             <p>
+              var number1=Number(window.prompt("marks of Physics"));
+              <hr class="border-0">
+              var number2=Number(window.prompt("marks of Chemistry "));
+              <hr class="border-0">
+              var number3=Number(window.prompt("marks of Biology"));
+              <hr class="border-0">
+              var number4=Number(window.prompt("marks of Mathematics"));
+              <hr class="border-0">
+              var number5=Number(window.prompt("marks of Computer"));
+              <hr class="border-0">
+              var percentage=(number1+number2+number3+number4+number5)/5;
+
+              <hr class="border-0">
+              if(percentage>=90)
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad A";
+              <hr class="border-0">
+              else if(percentage>=80)
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad B";
+              <hr class="border-0">
+              else if(percentage>=70)
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad C";
+              <hr class="border-0">
+              else if(percentage>=60)
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad D";
+              <hr class="border-0">
+              else if(percentage>=40)
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad E";
+              <hr class="border-0">
+              else 
+              <hr class="border-0">
+              window.document.getElementById('q14').innerHTML=percentage+"% Grad F";
+
+             </p>
+             <button onclick="q14()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q14">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+              Q15- Write a program to print total number of days in month.
+            </button>
+          </h2>
+          <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+              var number=Number(window.prompt("enter the month number"));<hr class="border-0">
+              switch(number){<hr class="border-0">
+                  case 1:<hr class="border-0">
+                  case 3:<hr class="border-0">
+                  case 5:<hr class="border-0">
+                  case 7:<hr class="border-0">
+                  case 8:<hr class="border-0">
+                  case 10:<hr class="border-0">
+                  case 12:<hr class="border-0">
+                      window.document.getElementById("q15").innerHTML="Days in Month: 31";<hr class="border-0">
+                      break;<hr class="border-0">
+                  case 4:<hr class="border-0">
+                  case 6:<hr class="border-0">
+                  case 9:<hr class="border-0">
+                  case 11:<hr class="border-0">
+                      window.document.getElementById("q15").innerHTML="Days in Month: 30";  <hr class="border-0">
+                      break; <hr class="border-0">
+                  case 2:<hr class="border-0">
+                      window.document.getElementById("q15").innerHTML="Days in Month: 28 or 29";
+              }
+            </p>
+              <button onclick="q15()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q15">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSixteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+            Q16- Write a program to check whether an alphabet is vowel or consonant.
+          </button>
+        </h2>
+        <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             <p>
+              var char=window.prompt("enter the alphabet");<hr class="border-0">
+              switch(char){<hr class="border-0">
+                  case 'a':<hr class="border-0">
+                  case 'u':<hr class="border-0">
+                  case 'o':<hr class="border-0">
+                  case 'i':<hr class="border-0">
+                  case 'e':<hr class="border-0">
+                  window.document.getElementById("q16").innerHTML="vowel";<hr class="border-0">
+              break;<hr class="border-0">
+              default:<hr class="border-0">
+              window.document.getElementById("q16").innerHTML="Consonant";
+              }
+             </p>
+             <button onclick="q16()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q16">answer </h2>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeventeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+              Q17- Write a program to find maximum between two numbers.
+            </button>
+          </h2>
+          <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>
+              var int1=Number(window.prompt("enter the first number"));
+             <hr class="border-0">
+             var int2=Number(window.prompt("enter the second number"));
+             <hr class="border-0">
+             switch(true){
+             <hr class="border-0">
+              case (int1>int2):
+             <hr class="border-0">
+             window.document.getElementById("q17").innerHTML=int1;
+             <hr class="border-0">
+             break;
+             <hr class="border-0">
+             case (int1&lt;=int2):    
+             <hr class="border-0">
+             window.document.getElementById("q17").innerHTML=int2;
+            }
+             </p>
+             <button onclick="q17()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q17">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEighteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+              Q18- Write a program to check whether a number is even or odd.
+            </button>
+          </h2>
+          <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>
+              var number=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+              switch(number%2){
+              <hr class="border-0">
+                case 0:
+              <hr class="border-0">
+              window.document.getElementById("q18").innerHTML="even";
+              <hr class="border-0">
+              break;
+              <hr class="border-0">
+              case 1:
+              <hr class="border-0">
+              window.document.getElementById("q18").innerHTML="odd";
+                }
+            </p>
+            <button onclick="q18()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q18">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNinteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+              Q19- Write a program to check whether a number is positive or negative or zero.
+            </button>
+          </h2>
+          <div id="collapseNinteen" class="accordion-collapse collapse" aria-labelledby="headingNinteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>
+              var number=Number(window.prompt("enter the number"));
+              <hr class="border-0">
+              switch(true){
+              <hr class="border-0">
+             case(number&lt;0):
+              <hr class="border-0">
+             window.document.getElementById("q19").innerHTML="negative";
+              <hr class="border-0">
+             break;
+              <hr class="border-0">
+             case(number>=0):
+              <hr class="border-0">
+             window.document.getElementById("q19").innerHTML="positive";
+              }
+             
+            </p>
+            <button onclick="q19()" type="button" class="btn btn-primary mb-1">test</button>
+            <h2 id="q19">answer </h2>
+            </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwenty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+              Q20- Write a program to create Simple Calculator.
+            </button>
+          </h2>
+          <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>
+                var number1=Number(window.prompt("enter the first number"));
+                <hr class="border-0">
+                var number2=Number(window.prompt("enter the second number"));
+                <hr class="border-0">
+                var oparation=Number(window.prompt("insert the opartion"));
+                <hr class="border-0">
+                switch(oparation){
+                <hr class="border-0">
+                  case('+'):
+                <hr class="border-0">
+                window.document.getElementById("q20").innerHTML="number1+number2="+number1+number2;
+                <hr class="border-0">
+                break;
+               <hr class="border-0">
+                case('-'):
+               <hr class="border-0">
+               window.document.getElementById("q20").innerHTML="number1-number"+number1-number2;
+               <hr class="border-0">
+               break;
+               <hr class="border-0">
+               case('*'):
+               <hr class="border-0">
+                window.document.getElementById("q20").innerHTML="number1*number2="+number1*number2;
+               <hr class="border-0">
+                break;
+               <hr class="border-0">
+                case('/'):
+               <hr class="border-0">
+               window.document.getElementById("q20").innerHTML="number1/number2="+number1/number2;
+               <hr class="border-0">
+               break;
+              <hr class="border-0"> 
+              }
+              </p>
+              <button onclick="q20()" type="button" class="btn btn-primary mb-1">test</button>
+              <h2 id="q20">answer </h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+     
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</html>
